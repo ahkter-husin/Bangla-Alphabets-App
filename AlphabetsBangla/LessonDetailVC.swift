@@ -56,7 +56,6 @@ class LessonDetailVC: UIViewController {
         let lesson = lessonTitleLabel.text!
         
         if UserDefaults.standard.string(forKey: "\(lesson)" + "BestTime") == nil {
-            UserDefaults.standard.set("0", forKey: "\(lesson)" + "BestTime")
             bestTimeLabel.text = "-"
         } else {
             bestTimeLabel.text = UserDefaults.standard.string(forKey: "\(lesson)BestTime")!
@@ -64,7 +63,6 @@ class LessonDetailVC: UIViewController {
         
         
         if UserDefaults.standard.string(forKey: "\(lesson)" + "LastTime") == nil {
-            UserDefaults.standard.set("0", forKey: "\(lesson)" + "LastTime")
             lastTimeLabel.text = "-"
         } else {
             lastTimeLabel.text = UserDefaults.standard.string(forKey: "\(lesson)LastTime")
