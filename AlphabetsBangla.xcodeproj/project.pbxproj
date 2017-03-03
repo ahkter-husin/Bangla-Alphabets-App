@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80183E161E5A70D200812F4A /* LessonCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80183E151E5A70D200812F4A /* LessonCompleteVC.swift */; };
 		8047C9D21E5612DE00AC4FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D11E5612DE00AC4FF9 /* AppDelegate.swift */; };
-		8047C9D41E5612DE00AC4FF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D31E5612DE00AC4FF9 /* ViewController.swift */; };
+		8047C9D41E5612DE00AC4FF9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D31E5612DE00AC4FF9 /* HomeVC.swift */; };
 		8047C9D71E5612DE00AC4FF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8047C9D51E5612DE00AC4FF9 /* Main.storyboard */; };
 		8047C9DA1E5612DE00AC4FF9 /* AlphabetsBangla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D81E5612DE00AC4FF9 /* AlphabetsBangla.xcdatamodeld */; };
 		8047C9DC1E5612DE00AC4FF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8047C9DB1E5612DE00AC4FF9 /* Assets.xcassets */; };
 		8047C9DF1E5612DE00AC4FF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8047C9DD1E5612DE00AC4FF9 /* LaunchScreen.storyboard */; };
+		8047C9E81E56138700AC4FF9 /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9E71E56138700AC4FF9 /* LessonCell.swift */; };
+		8047C9ED1E5613D000AC4FF9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9EC1E5613D000AC4FF9 /* MainVC.swift */; };
+		80D2CA441E58C708003E7AA8 /* LessonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2CA431E58C708003E7AA8 /* LessonDetailVC.swift */; };
+		80D2CA461E59C9A0003E7AA8 /* TraceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D2CA451E59C9A0003E7AA8 /* TraceVC.swift */; };
+		80F94E841E56253500A0C34B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F94E831E56253500A0C34B /* MaterialView.swift */; };
+		80F94E871E572C3800A0C34B /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F94E861E572C3800A0C34B /* Lesson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80183E151E5A70D200812F4A /* LessonCompleteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCompleteVC.swift; sourceTree = "<group>"; };
 		8047C9CE1E5612DE00AC4FF9 /* AlphabetsBangla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphabetsBangla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8047C9D11E5612DE00AC4FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8047C9D31E5612DE00AC4FF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8047C9D31E5612DE00AC4FF9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8047C9D61E5612DE00AC4FF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8047C9D91E5612DE00AC4FF9 /* AlphabetsBangla.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlphabetsBangla.xcdatamodel; sourceTree = "<group>"; };
 		8047C9DB1E5612DE00AC4FF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8047C9DE1E5612DE00AC4FF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8047C9E01E5612DE00AC4FF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8047C9E71E56138700AC4FF9 /* LessonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCell.swift; sourceTree = "<group>"; };
+		8047C9EC1E5613D000AC4FF9 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		80D2CA431E58C708003E7AA8 /* LessonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonDetailVC.swift; sourceTree = "<group>"; };
+		80D2CA451E59C9A0003E7AA8 /* TraceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceVC.swift; sourceTree = "<group>"; };
+		80F94E831E56253500A0C34B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		80F94E861E572C3800A0C34B /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		80F94E881E57553A00A0C34B /* Alef-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alef-Bold.ttf"; sourceTree = "<group>"; };
+		80F94E891E57553A00A0C34B /* Alef-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alef-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,8 @@
 			children = (
 				8047C9D01E5612DE00AC4FF9 /* AlphabetsBangla */,
 				8047C9CF1E5612DE00AC4FF9 /* Products */,
+				80F94E881E57553A00A0C34B /* Alef-Bold.ttf */,
+				80F94E891E57553A00A0C34B /* Alef-Regular.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +74,10 @@
 		8047C9D01E5612DE00AC4FF9 /* AlphabetsBangla */ = {
 			isa = PBXGroup;
 			children = (
+				80F94E851E572C1F00A0C34B /* Model */,
+				8047C9E91E56138B00AC4FF9 /* View */,
+				8047C9E61E56136F00AC4FF9 /* Controller */,
 				8047C9D11E5612DE00AC4FF9 /* AppDelegate.swift */,
-				8047C9D31E5612DE00AC4FF9 /* ViewController.swift */,
 				8047C9D51E5612DE00AC4FF9 /* Main.storyboard */,
 				8047C9DB1E5612DE00AC4FF9 /* Assets.xcassets */,
 				8047C9DD1E5612DE00AC4FF9 /* LaunchScreen.storyboard */,
@@ -65,6 +85,35 @@
 				8047C9D81E5612DE00AC4FF9 /* AlphabetsBangla.xcdatamodeld */,
 			);
 			path = AlphabetsBangla;
+			sourceTree = "<group>";
+		};
+		8047C9E61E56136F00AC4FF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8047C9D31E5612DE00AC4FF9 /* HomeVC.swift */,
+				8047C9EC1E5613D000AC4FF9 /* MainVC.swift */,
+				80D2CA431E58C708003E7AA8 /* LessonDetailVC.swift */,
+				80D2CA451E59C9A0003E7AA8 /* TraceVC.swift */,
+				80183E151E5A70D200812F4A /* LessonCompleteVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8047C9E91E56138B00AC4FF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8047C9E71E56138700AC4FF9 /* LessonCell.swift */,
+				80F94E831E56253500A0C34B /* MaterialView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80F94E851E572C1F00A0C34B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80F94E861E572C3800A0C34B /* Lesson.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +190,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8047C9DA1E5612DE00AC4FF9 /* AlphabetsBangla.xcdatamodeld in Sources */,
-				8047C9D41E5612DE00AC4FF9 /* ViewController.swift in Sources */,
+				80D2CA461E59C9A0003E7AA8 /* TraceVC.swift in Sources */,
+				8047C9ED1E5613D000AC4FF9 /* MainVC.swift in Sources */,
+				8047C9D41E5612DE00AC4FF9 /* HomeVC.swift in Sources */,
+				80F94E841E56253500A0C34B /* MaterialView.swift in Sources */,
+				80183E161E5A70D200812F4A /* LessonCompleteVC.swift in Sources */,
 				8047C9D21E5612DE00AC4FF9 /* AppDelegate.swift in Sources */,
+				80F94E871E572C3800A0C34B /* Lesson.swift in Sources */,
+				8047C9E81E56138700AC4FF9 /* LessonCell.swift in Sources */,
+				80D2CA441E58C708003E7AA8 /* LessonDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +362,7 @@
 				8047C9E51E5612DE00AC4FF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
