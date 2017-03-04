@@ -11,15 +11,22 @@ import UIKit
 class TraceVC: UIViewController {
 
 
-    @IBOutlet weak var imageView: UIImageView!
+
+    @IBOutlet weak var boardImageView: UIImageView!
     @IBOutlet weak var strokeLabel: UILabel!
     @IBOutlet weak var traceCharacter: UILabel!
     var timer: Timer!
     var time: Double = 0
     var i = 0 //char iterator
     private var _lesson: Lesson!
-    var lastPoint = CGPoint.zero
-    var swiped = false
+    
+    //second method
+    var finalPoint: CGPoint!
+    var isDrawing: Bool!
+    var lineWidth: CGFloat = 8.0
+    var red: CGFloat!
+    var green: CGFloat!
+    var blue: CGFloat!
     
     var lesson: Lesson {
         get {
@@ -34,6 +41,10 @@ class TraceVC: UIViewController {
 
         firstChar()
         startTimer()
+        
+        red = 255.0/255.0
+        green = 67.0/255.0
+        blue = 57.0/255.0
         
     }
     
@@ -118,48 +129,50 @@ class TraceVC: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = false
+        isDrawing = false
         if let touch = touches.first {
-            lastPoint = touch.location(in: self.view)
+            finalPoint = touch.preciseLocation(in: boardImageView)
         }
     }
     
-    func drawLines(fromPoint: CGPoint, toPoint: CGPoint) {
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        var context = UIGraphicsGetCurrentContext()
-        
-        context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
-        context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
-        
-        context?.setBlendMode(CGBlendMode.normal)
-        context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(8)
-        context?.setStrokeColor(UIColor(red: 255, green: 67, blue: 57, alpha: 1.0).cgColor)
-        
-        context?.strokePath()
-        imageView.image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        
-    }
-    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        swiped = true
+        isDrawing = true
+        
         if let touch = touches.first {
-            var currentPoint = touch.location(in: self.view)
-            drawLines(fromPoint: lastPoint, toPoint: currentPoint)
             
-            lastPoint = currentPoint
+            let currentCoordinate = touch.preciseLocation(in: boardImageView)
+            
+            UIGraphicsBeginImageContext(boardImageView.frame.size)
+            boardImageView.image?.draw(in: CGRect(x: 0, y: 0, width: boardImageView.frame.size.width, height: boardImageView.frame.size.height))
+            UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: finalPoint.x, y: finalPoint.y))
+            UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: currentCoordinate.x, y: currentCoordinate.y))
+            UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+            UIGraphicsGetCurrentContext()?.setLineWidth(lineWidth)
+            UIGraphicsGetCurrentContext()?.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
+            UIGraphicsGetCurrentContext()?.strokePath()
+            boardImageView.image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            finalPoint = currentCoordinate
+            
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if !swiped {
-            drawLines(fromPoint: lastPoint, toPoint: lastPoint)
+        if (!isDrawing) {
+            
+            UIGraphicsBeginImageContext(boardImageView.frame.size)
+            boardImageView.image?.draw(in: CGRect(x: 0, y: 0, width: boardImageView.frame.size.width, height: boardImageView.frame.size.height))
+            UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: finalPoint.x, y: finalPoint.y))
+            UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: finalPoint.x, y: finalPoint.y))
+            UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+            UIGraphicsGetCurrentContext()?.setLineWidth(lineWidth)
+            UIGraphicsGetCurrentContext()?.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
+            UIGraphicsGetCurrentContext()?.strokePath()
+            self.boardImageView.image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
         }
     }
-    
     
     
 }

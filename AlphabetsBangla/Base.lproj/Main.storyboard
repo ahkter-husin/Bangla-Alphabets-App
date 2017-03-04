@@ -662,14 +662,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Kra-DZ-NW8" id="Sby-Pi-hSl"/>
+                        <outlet property="boardImageView" destination="Kra-DZ-NW8" id="bRm-Lo-UPv"/>
                         <outlet property="strokeLabel" destination="ems-9N-UzF" id="TtH-LY-ltJ"/>
                         <outlet property="traceCharacter" destination="TAn-QT-NJo" id="udw-hT-G3Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhx-hz-eER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2818.125" y="101.40845070422536"/>
+            <point key="canvasLocation" x="2816.8000000000002" y="101.19940029985008"/>
         </scene>
         <!--LessonCompleteVC-->
         <scene sceneID="wLk-v9-h7G">
