@@ -18,6 +18,7 @@ class TraceVC: UIViewController {
     var timer: Timer!
     var time: Double = 0
     var i = 0 //char iterator
+    var strokeCounter = 0 //stroke iterator
     private var _lesson: Lesson!
     
     //second method
@@ -86,7 +87,11 @@ class TraceVC: UIViewController {
             }
             
             if let strokeCount = charDict[i][2] as? String {
-                
+                if strokeCount == "1" {
+                    strokeLabel.text = "\(strokeCount) stroke left"
+                } else {
+                    strokeLabel.text = "\(strokeCount) strokes left"
+                }
             }
             
         }
@@ -124,8 +129,8 @@ class TraceVC: UIViewController {
         }
     }
     
-    @IBAction func undoTapped() {
-    
+    @IBAction func undoDrawing(_ sender: AnyObject) {
+        self.boardImageView.image = nil
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -172,9 +177,8 @@ class TraceVC: UIViewController {
             UIGraphicsEndImageContext()
             
         }
+        strokeCounter += 1
     }
-    
-    
 }
 
 extension Double {
