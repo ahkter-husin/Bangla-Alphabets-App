@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80183E161E5A70D200812F4A /* LessonCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80183E151E5A70D200812F4A /* LessonCompleteVC.swift */; };
+		803F70B31E6B9CFC0095D550 /* LessonCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F70B21E6B9CFC0095D550 /* LessonCompleteVC.swift */; };
 		8047C9D21E5612DE00AC4FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D11E5612DE00AC4FF9 /* AppDelegate.swift */; };
 		8047C9D41E5612DE00AC4FF9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D31E5612DE00AC4FF9 /* HomeVC.swift */; };
 		8047C9D71E5612DE00AC4FF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8047C9D51E5612DE00AC4FF9 /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		80183E151E5A70D200812F4A /* LessonCompleteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCompleteVC.swift; sourceTree = "<group>"; };
+		803F70B21E6B9CFC0095D550 /* LessonCompleteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCompleteVC.swift; sourceTree = "<group>"; };
 		8047C9CE1E5612DE00AC4FF9 /* AlphabetsBangla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphabetsBangla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8047C9D11E5612DE00AC4FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8047C9D31E5612DE00AC4FF9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				8047C9EC1E5613D000AC4FF9 /* MainVC.swift */,
 				80D2CA431E58C708003E7AA8 /* LessonDetailVC.swift */,
 				80D2CA451E59C9A0003E7AA8 /* TraceVC.swift */,
-				80183E151E5A70D200812F4A /* LessonCompleteVC.swift */,
+				803F70B21E6B9CFC0095D550 /* LessonCompleteVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 				8047C9ED1E5613D000AC4FF9 /* MainVC.swift in Sources */,
 				8047C9D41E5612DE00AC4FF9 /* HomeVC.swift in Sources */,
 				80F94E841E56253500A0C34B /* MaterialView.swift in Sources */,
-				80183E161E5A70D200812F4A /* LessonCompleteVC.swift in Sources */,
+				803F70B31E6B9CFC0095D550 /* LessonCompleteVC.swift in Sources */,
 				8047C9D21E5612DE00AC4FF9 /* AppDelegate.swift in Sources */,
 				80F94E871E572C3800A0C34B /* Lesson.swift in Sources */,
 				8047C9E81E56138700AC4FF9 /* LessonCell.swift in Sources */,
