@@ -21,7 +21,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         let lesson1Array = [["অ", "a", "4"], ["আ", "aa", "6"], ["ই", "i", "3"], ["ঈ", "ee", "5"], ["উ", "u", "3"]]
-//        let lesson2Alpha = ["ঊ": 3, "ঋ": 5, "এ": 1, "ঐ": 2, "ও": 1, "ঔ": 2]
         let lesson2Array = [["ঊ", "u", "3"], ["এ", "ae", "1"], ["ঐ", "oy" ,"2"], ["ও", "o", "1"], ["ঔ", "ou", "2"]]
 //        let lesson3Alpha = ["ক": 2, "খ": 3, "গ": 3, "ঘ": 2, "ঙ": 1]
 //        let lesson4Alpha = ["চ": 2, "ছ": 2, "জ": 2, "ঝ": 4, "ঞ": 2, "য": 3, "শ": 4]

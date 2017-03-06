@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		803F70B31E6B9CFC0095D550 /* LessonCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F70B21E6B9CFC0095D550 /* LessonCompleteVC.swift */; };
+		803F70B51E6CBD7B0095D550 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803F70B41E6CBD7B0095D550 /* TestVC.swift */; };
 		8047C9D21E5612DE00AC4FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D11E5612DE00AC4FF9 /* AppDelegate.swift */; };
 		8047C9D41E5612DE00AC4FF9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047C9D31E5612DE00AC4FF9 /* HomeVC.swift */; };
 		8047C9D71E5612DE00AC4FF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8047C9D51E5612DE00AC4FF9 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		803F70B21E6B9CFC0095D550 /* LessonCompleteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCompleteVC.swift; sourceTree = "<group>"; };
+		803F70B41E6CBD7B0095D550 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		8047C9CE1E5612DE00AC4FF9 /* AlphabetsBangla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphabetsBangla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8047C9D11E5612DE00AC4FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8047C9D31E5612DE00AC4FF9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				80D2CA431E58C708003E7AA8 /* LessonDetailVC.swift */,
 				80D2CA451E59C9A0003E7AA8 /* TraceVC.swift */,
 				803F70B21E6B9CFC0095D550 /* LessonCompleteVC.swift */,
+				803F70B41E6CBD7B0095D550 /* TestVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				8047C9D21E5612DE00AC4FF9 /* AppDelegate.swift in Sources */,
 				80F94E871E572C3800A0C34B /* Lesson.swift in Sources */,
 				8047C9E81E56138700AC4FF9 /* LessonCell.swift in Sources */,
+				803F70B51E6CBD7B0095D550 /* TestVC.swift in Sources */,
 				80D2CA441E58C708003E7AA8 /* LessonDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
